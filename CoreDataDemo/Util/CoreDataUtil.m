@@ -83,9 +83,11 @@
 //    NSArray *sortDescriptions = [[NSArray alloc]initWithObjects:sortDescriptor, nil];
 //    [fetchRequest setSortDescriptors:sortDescriptions];
     //执行获取数据请求，返回数组
+    
     NSError *error = nil;
     NSMutableArray *mutableFetchResult = [[self.managedObjectContext executeFetchRequest:fetchRequest error:&error] mutableCopy];
     if (mutableFetchResult == nil) {
+        
         NSLog(@"Error: %@,%@",error,[error userInfo]);
     }
     NSArray* resultArray = mutableFetchResult;

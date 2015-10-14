@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "CoreDataUtil.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor=[UIColor redColor];
+    CoreDataUtil* dataUtil=[[CoreDataUtil alloc]init];
+//    [dataUtil insertMessage];
+    
+  //  [dataUtil deleteMessage];
+    
+    [dataUtil selectMessageIsNotHaveInfo];
 }
 
 - (void)didReceiveMemoryWarning {

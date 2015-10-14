@@ -14,6 +14,11 @@
 		B2B2F8721B300E3A003BC96E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B2F8711B300E3A003BC96E /* Images.xcassets */; };
 		B2B2F8751B300E3A003BC96E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B2F8731B300E3A003BC96E /* LaunchScreen.xib */; };
 		B2B2F8811B300E3A003BC96E /* CoreDataDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B2F8801B300E3A003BC96E /* CoreDataDemoTests.m */; };
+		B2B2F8911B302AC0003BC96E /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2B2F88F1B302AC0003BC96E /* CoreDataModel.xcdatamodeld */; };
+		B2B2F8991B303E4F003BC96E /* CoreDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B2F8981B303E4F003BC96E /* CoreDataUtil.m */; };
+		B2B2F89B1B303E94003BC96E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B2F89A1B303E94003BC96E /* CoreData.framework */; };
+		B2B2F8A31B305840003BC96E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B2F8A01B305840003BC96E /* User.m */; };
+		B2B2F8A41B305840003BC96E /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B2F8A21B305840003BC96E /* Message.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		B2B2F87A1B300E3A003BC96E /* CoreDataDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B2F87F1B300E3A003BC96E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2B2F8801B300E3A003BC96E /* CoreDataDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoTests.m; sourceTree = "<group>"; };
+		B2B2F8901B302AC0003BC96E /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		B2B2F8971B303E4F003BC96E /* CoreDataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataUtil.h; sourceTree = "<group>"; };
+		B2B2F8981B303E4F003BC96E /* CoreDataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataUtil.m; sourceTree = "<group>"; };
+		B2B2F89A1B303E94003BC96E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B2B2F89F1B305840003BC96E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B2B2F8A01B305840003BC96E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B2B2F8A11B305840003BC96E /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		B2B2F8A21B305840003BC96E /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B2F89B1B303E94003BC96E /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,7 @@
 		B2B2F8581B300E3A003BC96E = {
 			isa = PBXGroup;
 			children = (
+				B2B2F89A1B303E94003BC96E /* CoreData.framework */,
 				B2B2F8631B300E3A003BC96E /* CoreDataDemo */,
 				B2B2F87D1B300E3A003BC96E /* CoreDataDemoTests */,
 				B2B2F8621B300E3A003BC96E /* Products */,
@@ -81,6 +96,11 @@
 		B2B2F8631B300E3A003BC96E /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B2B2F89F1B305840003BC96E /* User.h */,
+				B2B2F8A01B305840003BC96E /* User.m */,
+				B2B2F8A11B305840003BC96E /* Message.h */,
+				B2B2F8A21B305840003BC96E /* Message.m */,
+				B2B2F8961B303E17003BC96E /* Util */,
 				B2B2F8681B300E3A003BC96E /* AppDelegate.h */,
 				B2B2F8691B300E3A003BC96E /* AppDelegate.m */,
 				B2B2F86B1B300E3A003BC96E /* ViewController.h */,
@@ -89,6 +109,7 @@
 				B2B2F8711B300E3A003BC96E /* Images.xcassets */,
 				B2B2F8731B300E3A003BC96E /* LaunchScreen.xib */,
 				B2B2F8641B300E3A003BC96E /* Supporting Files */,
+				B2B2F88F1B302AC0003BC96E /* CoreDataModel.xcdatamodeld */,
 			);
 			path = CoreDataDemo;
 			sourceTree = "<group>";
@@ -117,6 +138,15 @@
 				B2B2F87F1B300E3A003BC96E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2B2F8961B303E17003BC96E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B2B2F8971B303E4F003BC96E /* CoreDataUtil.h */,
+				B2B2F8981B303E4F003BC96E /* CoreDataUtil.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +251,10 @@
 			files = (
 				B2B2F86D1B300E3A003BC96E /* ViewController.m in Sources */,
 				B2B2F86A1B300E3A003BC96E /* AppDelegate.m in Sources */,
+				B2B2F8A31B305840003BC96E /* User.m in Sources */,
+				B2B2F8A41B305840003BC96E /* Message.m in Sources */,
+				B2B2F8911B302AC0003BC96E /* CoreDataModel.xcdatamodeld in Sources */,
+				B2B2F8991B303E4F003BC96E /* CoreDataUtil.m in Sources */,
 				B2B2F8671B300E3A003BC96E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +460,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B2B2F88F1B302AC0003BC96E /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B2B2F8901B302AC0003BC96E /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = B2B2F8901B302AC0003BC96E /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B2B2F8591B300E3A003BC96E /* Project object */;
 }
